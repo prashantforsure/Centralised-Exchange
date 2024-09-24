@@ -12,3 +12,29 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+model User{
+id String @id @default(autoincrement())
+name String
+password String
+solwalletId String
+inrwalletId String?
+profilePicture String?
+solwallet SolWallet[]
+inrwallet InrWallet[]
+provider Provider
+}
+
+model InrWallet{
+id          String    @id  @default(uuid())  
+  balance     Int       
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id])
+}
+
+model SolWallet{
+
+}
+
+enum Provider{
+  Google
+}
