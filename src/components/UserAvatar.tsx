@@ -1,5 +1,5 @@
 import { User } from '@prisma/client'
-import Image from 'next/image'
+
 import { Avatar, AvatarFallback } from './ui/avatar'
 import { AvatarProps } from '@radix-ui/react-avatar'
 import { CircleUserRound } from 'lucide-react'
