@@ -14,7 +14,7 @@ const Navbar = async () => {
         {/* logo */}
         <Link href='/' className='flex gap-2 items-center'>
           
-          <p className='hidden  text-xl text-red-600 font-extrabold  md:block'>Faction</p>
+          <h1 className='text-xl font-bold tracking-tighter text-blue-500 sm:text-xl md:text-5xl lg:text-2xl/none'>My Music</h1>
         </Link>
 
         {/* search bar */}

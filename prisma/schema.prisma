@@ -19,7 +19,7 @@ model User {
   username        String
   sub             String    @default("")
   name            String?
-  profilePicture  String?
+  image  String?
   password        String?
   solWalletId     String?
   solWallet       SolWallet?
